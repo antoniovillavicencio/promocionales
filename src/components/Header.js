@@ -27,33 +27,13 @@ const Header = () => {
 export default Header
 
 const Nav = styled.nav`
-  background: red;
+  background: transparent;
   height: 80px;
   display: flex;
   justify-content: space-between;
   padding: 0.5rem calc((100vw - 1300px) / 2);
   z-index: 100;
   position: relative;
-`
-
-const NavLink = styled(Link)`
-  color: #fff;
-  display: flex;
-  align-items: center;
-  text-decoration: none;
-  padding: 0 1rem;
-  height: 100%;
-  cursor: pointer;
-`
-
-const NavMenu = styled.div`
-  display: flex;
-  align-items: center;
-  margin-right: -48px;
-  
-  @media screen and (max-width: 768px) {
-    display: none;
-  }
 `
 
 const Bars = styled(FaBars)`
@@ -69,6 +49,26 @@ const Bars = styled(FaBars)`
     font-size: 1.8rem;
     cursor: pointer;
   }
+`
+
+const NavMenu = styled.div`
+  display: flex;
+  align-items: center;
+  margin-right: -48px;
+
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
+`
+
+const NavLink = styled(Link)`
+  color: #fff;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  padding: 0 1rem;
+  height: 100%;
+  cursor: pointer;
 `
 
 const NavBtn = styled.div`
