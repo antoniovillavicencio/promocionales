@@ -33,7 +33,6 @@ const Products = ({heading}) => {
       productsArray.push(
         <ProductCard>
           <ProductImg
-            src={item.node.img.childImageSharp.fluid.src}
             fluid={item.node.img.childImageSharp.fluid}
             alt={item.node.alt}
           />
