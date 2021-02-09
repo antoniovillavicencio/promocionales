@@ -77,7 +77,7 @@ const TestimonialsContainer = styled.div`
 
 const TopLine = styled.p`
   color: #077bf1;
-  font-size: 1rem;
+  font-size: 1.2rem;
   padding-left: 2rem;
   margin-bottom: 0.75rem;
 `
@@ -92,7 +92,7 @@ const Description = styled.p`
 
 const ContentWrapper = styled.div`
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 2fr 3fr;
   padding: 0 2rem;
 
   @media screen and (max-width: 768px) {
