@@ -7,27 +7,27 @@ const Footer = () => {
     <FooterContainer>
       <FooterLinksWrapper>
         <FooterDesc>
-          <h1>Explorix</h1>
-          <p>We strive to create the best experiences for our customers</p>
+          <h1>4 Promotional</h1>
+          <p>Ofrecemos una gran variedad de artículos promocionales</p>
         </FooterDesc>
         <FooterLinkItems>
-          <FooterLinkTitle>Contact Us</FooterLinkTitle>
-          <FooterLink to="/about">Contact</FooterLink>
-          <FooterLink to="/">Support</FooterLink>
-          <FooterLink to="/">Destinations</FooterLink>
-          <FooterLink to="/">Sponsorships</FooterLink>
+          <FooterLinkTitle>Nosotros</FooterLinkTitle>
+          <FooterLink to="/">Contacto</FooterLink>
+          <FooterLink to="/">Soporte</FooterLink>
+          <FooterLink to="/">Envíos</FooterLink>
+          <FooterLink to="/">Cotizaciones</FooterLink>
         </FooterLinkItems>
       </FooterLinksWrapper>
       <FooterLinksWrapper>
+        {/*<FooterLinkItems>*/}
+        {/*  <FooterLinkTitle>Videos</FooterLinkTitle>*/}
+        {/*  <FooterLink to="/">Submit Videos</FooterLink>*/}
+        {/*  <FooterLink to="/">Ambassadors</FooterLink>*/}
+        {/*  <FooterLink to="/">Agency</FooterLink>*/}
+        {/*  <FooterLink to="/">Influence</FooterLink>*/}
+        {/*</FooterLinkItems>*/}
         <FooterLinkItems>
-          <FooterLinkTitle>Videos</FooterLinkTitle>
-          <FooterLink to="/">Submit Videos</FooterLink>
-          <FooterLink to="/">Ambassadors</FooterLink>
-          <FooterLink to="/">Agency</FooterLink>
-          <FooterLink to="/">Influence</FooterLink>
-        </FooterLinkItems>
-        <FooterLinkItems>
-          <FooterLinkTitle>Social Media</FooterLinkTitle>
+          <FooterLinkTitle>Redes Sociales</FooterLinkTitle>
           <FooterLink to="/">Instagram</FooterLink>
           <FooterLink to="/">Facebook</FooterLink>
           <FooterLink to="/">Youtube</FooterLink>

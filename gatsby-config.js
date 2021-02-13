@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Travel Website`,
-    description: `Travel website showcasing the best travel destinations and deals online.`,
+    title: `4 Promotional`,
+    description: `Articulos promocionales.`,
     author: `Antonio Villavicencio`,
   },
   plugins: [

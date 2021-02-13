@@ -1,18 +1,14 @@
 export const menuData = [
   {
-    title: 'About',
+    title: 'Nosotros',
     link: '/about'
   },
   {
-    title: 'Trips',
-    link: '/trips'
+    title: 'Productos',
+    link: '/products'
   },
   {
-    title: 'Careers',
-    link: '/careers'
-  },
-  {
-    title: 'Contact',
+    title: 'Contáctanos',
     link: '/contact'
-  },
+  }
 ]

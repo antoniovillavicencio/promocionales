@@ -3,8 +3,9 @@ import styled from "styled-components"
 import {
   FaMoneyCheck,
   GiEarthAmerica,
-  MdAirplanemodeActive,
+  MdAttachMoney,
   MdTimer,
+  MdSupervisorAccount
 } from "react-icons/all"
 
 const StatsData = [
@@ -16,19 +17,19 @@ const StatsData = [
         `}
       />
     ),
-    title: "Over 100 Destinations",
-    desc: "Travel 100 unique places",
+    title: "Envíos a toda la República",
+    desc: "Llevamos tus productos hasta la puerta de tu negocio",
   },
   {
     icon: (
-      <MdAirplanemodeActive
+      <MdSupervisorAccount
         css={`
           color: #f3a82e;
         `}
       />
     ),
-    title: "1 Million Trips Made",
-    desc: "Over 1 million trips completed last year",
+    title: "Atención personalizada",
+    desc: "Nos preocupamos por atender tus necesidades",
   },
   {
     icon: (
@@ -38,26 +39,26 @@ const StatsData = [
         `}
       />
     ),
-    title: "Fastest Suppoert",
-    desc: "Access our support team 24/7",
+    title: "Entregas rápidas",
+    desc: "Entregamos desde X dias hábiles",
   },
   {
     icon: (
-      <FaMoneyCheck
+      <MdAttachMoney
         css={`
           color: #3af576;
         `}
       />
     ),
-    title: "Best Deals",
-    desc: "We offer the best prices",
+    title: "Los mejores precios",
+    desc: "Ofrecemos el mejor valor por tu dinero",
   },
 ]
 
 const Stats = () => {
   return (
     <StatsContainer>
-      <Heading>Why choose us?</Heading>
+      <Heading>¿Por qué nosotros?</Heading>
       <Wrapper>
         {StatsData.map((item, index) => {
           return (
@@ -77,8 +78,8 @@ export default Stats
 
 const StatsContainer = styled.div`
   width: 100%;
-  background: #fff;
-  color: #000;
+  background: #f1f1f1;
+  color: #102027;
   display: flex;
   flex-direction: column;
   justify-content: center;

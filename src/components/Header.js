@@ -1,14 +1,30 @@
-import React from "react"
+import React, {useState, useEffect} from "react"
 import styled from "styled-components"
 import { Link } from "gatsby"
 import { FaBars } from "react-icons/fa"
 // import { menuData } from "../data/MenuData"
 import { Button } from "./Button"
+import { useRef, useLayoutEffect } from 'react'
+
 
 const Header = ({ menuData, toggle }) => {
+
+  const [isTop, setIsTop] = useState(true);
+
+  useEffect(() => {
+    document.addEventListener("scroll", e => {
+      let scrolled = document.scrollingElement.scrollTop;
+      if (scrolled >=5) {
+        setIsTop(false);
+      } else {
+        setIsTop(true);
+      }
+    })
+  })
+
   return (
-    <Nav>
-      <NavLink to="/">Explorix</NavLink>
+    <Nav isTop={isTop}>
+      <NavLink to="/">4 Promotional</NavLink>
       <div onClick={toggle}>
         <Bars />
       </div>
@@ -19,18 +35,19 @@ const Header = ({ menuData, toggle }) => {
           </NavLink>
         ))}
       </NavMenu>
-      <NavBtn>
-        <Button primary round to={"/trips"}>
-          Book a Flight
-        </Button>
-      </NavBtn>
+      {/*<NavBtn>*/}
+      {/*  <Button primary round to={"/trips"}>*/}
+      {/*    Book a Flight*/}
+      {/*  </Button>*/}
+      {/*</NavBtn>*/}
     </Nav>
   )
 }
 export default Header
 
 const Nav = styled.nav`
-  background: transparent;
+  background: ${({isTop}) => (isTop ? 'transparent' : '#102027')};
+  box-shadow: ${({isTop}) => (!isTop ? '0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22)' : 'none')};
   height: 80px;
   display: flex;
   justify-content: space-between;
@@ -58,7 +75,7 @@ const Bars = styled(FaBars)`
 const NavMenu = styled.div`
   display: flex;
   align-items: center;
-  margin-right: -48px;
+  margin-right: 2rem;
   text-align: center;
 
   @media screen and (max-width: 768px) {
